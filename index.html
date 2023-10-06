@@ -3,9 +3,84 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Cinema</title>
+    <!-- Link CSS-->
+    <link rel="stylesheet" href="./assets/css/style.css">
 </head>
 <body>
-    
+    <div class="grid-container">
+        <header>
+            <div class="logo-container">
+                <img class="logo" src="./assets/movie.svg" alt="Logo">
+                <h1>Cinema</h1>
+            </div>
+            <img class="hamburguer-menu" src="./assets/menu.svg" alt="hamburguer-menu">
+            <ul>
+                <li>Inicio</li>
+                <li>Estrenos</li>
+                <li>Categorías</li>
+                <li>Info página</li>
+            </ul>
+        </header>
+        <menu>
+            <span>Ordenar por:</span>
+            <select>
+                <option>Estrenos</option>
+            </select>   
+        </menu>
+        <main>
+            <div class="card-container">
+                <div class="card">
+                    <img src="./assets/imgs/blue_beetle.jpg" alt="movie">
+                    <span>Blue Beetle</span>
+                    <button>Ver más</button>
+                </div>
+                <div class="card">
+                    <img src="./assets/imgs/elementos.jpg" alt="movie">
+                    <span>Elementos</span>
+                    <button>Ver más</button>
+                </div>
+                <div class="card">
+                    <img src="./assets/imgs/flash.jpg" alt="movie">
+                    <span>Flash</span>
+                    <button>Ver más</button>
+                </div>
+                <div class="card">
+                    <img src="./assets/imgs/gran_turismo.jpg" alt="movie">
+                    <span>Gran Turismo</span>
+                    <button>Ver más</button>
+                </div>
+                <div class="card">
+                    <img src="./assets/imgs/la_monja_2.jpg" alt="movie">
+                    <span>La monja 2</span>
+                    <button>Ver más</button>
+                </div>
+                <div class="card">
+                    <img src="./assets/imgs/la_sirenita.jpg" alt="movie">
+                    <span>La Sirenita</span>
+                    <button>Ver más</button>
+                </div>
+                <div class="card">
+                    <img src="./assets/imgs/megalodon_2.jpg" alt="movie">
+                    <span>Megalodón 2</span>
+                    <button>Ver más</button>
+                </div>
+            </div>
+            <div class="navigation">
+                <button><<</button>
+                <button>1</button>
+                <button>2</button>
+                <button>3</button>
+                <button>>></button>
+            </div>
+        </main>
+        <footer>
+            <div>
+                <img src="./assets/facebook.svg" alt="facebook-logo">
+                <img src="./assets/instagram.svg" alt="instagram-logo">
+            </div>
+            <span>Todos los derechos reservados.</span>
+        </footer>
+    </div>
 </body>
 </html>
