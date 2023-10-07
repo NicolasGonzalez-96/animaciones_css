@@ -137,6 +137,7 @@ footer > div > img {
 }
 
 @media (min-width: 576px) {
+    
     header{
         background-color:rgb(22, 19, 15);
     }
@@ -173,6 +174,10 @@ footer > div > img {
     header > ul > li {
         padding-top: 15px;
     }
+
+    header > ul > li:hover {
+        cursor: pointer;
+    }
     
     header > .logo-container  {
         flex-direction: column;
@@ -187,14 +192,46 @@ footer > div > img {
         display: none;
     }
 
+    main > .card-container {
+        gap:30px;
+    }
+
     main > .card-container > .card {
         width: 250px;
+        transition: all 1s;
+        -webkit-transition: all 1s;
+        -moz-transition: all 1s;
+        -ms-transition: all 1s;
+        -o-transition: all 1s;
+}
 
-    }
+    main > .card-container > .card:hover {
+        width: 250px;
+        transform: scale(1.1);
+        -webkit-transform: scale(1.1);
+        -moz-transform: scale(1.1);
+        -ms-transform: scale(1.1);
+        -o-transform: scale(1.1);
+}
 
     main > .card-container > .card > img {
         width:200px;
+        filter: grayscale();
+        -webkit-filter: grayscale();
+    }
 
+    main > .card-container > .card > img:hover {
+        width:200px;
+        filter: grayscale(0);
+        -webkit-filter: grayscale(0);
+    }
+
+    main > .card-container > .card > button:hover {
+        cursor: pointer;
+    }
+
+    main > .navigation > button:hover {
+        cursor: pointer;
     }
 
     footer {
