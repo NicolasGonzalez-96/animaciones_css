@@ -40,6 +40,10 @@ header > ul {
     display: none;
 }
 
+header > ul > li:hover {
+    cursor: pointer;
+}
+
 menu {
     grid-area: menu;
     background-color:#ececec;
@@ -81,12 +85,29 @@ main > .card-container > .card {
     width: 220px;
     height: fit-content;
     padding: 35px 0;
-    gap: 15px;
+    gap: 35px;
     border-radius: 3px;
     -webkit-border-radius: 3px;
     -moz-border-radius: 3px;
     -ms-border-radius: 3px;
     -o-border-radius: 3px;
+    transition: all 1s;
+    -webkit-transition: all 1s;
+    -moz-transition: all 1s;
+    -ms-transition: all 1s;
+    -o-transition: all 1s;
+}
+
+main > .card-container > .card > img {
+    width:200px;
+    filter: grayscale();
+    -webkit-filter: grayscale();
+}
+
+main > .card-container > .card > img:hover {
+    width:200px;
+    filter: grayscale(0);
+    -webkit-filter: grayscale(0);
 }
 
 main > .card-container > .card > img {
@@ -106,6 +127,10 @@ main > .card-container > .card > button {
     -o-border-radius: 5px;
 }
 
+main > .card-container > .card > button:hover {
+    cursor: pointer;
+}
+
 main > .navigation {
     display: flex;
 }
@@ -114,6 +139,10 @@ main > .navigation > button {
     width: 30px;
     height: 30px;
     color: rgb(57, 138, 94);
+}
+
+main > .navigation > button:hover {
+    cursor: pointer;
 }
 
 footer {
